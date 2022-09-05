@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from 'react';
+import Amplify, { API } from 'aws-amplify';
+
+const result = API.get('elevatorrobot1a1a1c2d', '/elevatorrobot1a1a1c2d', {});
 
 function App() {
-  const apiUrl = 'http://localhost:5000/api/values';
 
   return (
     <div className="App">
@@ -17,11 +20,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          # print the api response
-          {fetch(apiUrl).then((response) => response.json()).then((data) => data)}
+          Click this link
         </a>
       </header>
     </div>
+    
   );
 }
 

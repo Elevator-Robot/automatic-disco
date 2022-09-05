@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "elevatorrobot1a1a1c2d",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
