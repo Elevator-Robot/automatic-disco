@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import Amplify, { API } from 'aws-amplify';
+import { Amplify,  API } from 'aws-amplify';
 
-const result = API.get('elevatorrobot1a1a1c2d', '/elevatorrobot1a1a1c2d', {});
+const api = {
+  name: 'api87c1cd0d',
+  path: '/items'
+}
+
 
 function App() {
-
   return (
     <div className="App">
       <header className="App-header">
@@ -23,6 +26,9 @@ function App() {
           Click this link
         </a>
       </header>
+      <div>
+        <p>This is a test</p>
+      </div>
     </div>
     
   );
